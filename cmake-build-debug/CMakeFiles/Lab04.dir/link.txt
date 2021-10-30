@@ -1,0 +1,3 @@
+"D:\apps\CLion\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Lab04.dir/objects.a
+D:\apps\winbuilds\bin\ar.exe cr CMakeFiles\Lab04.dir/objects.a @CMakeFiles\Lab04.dir\objects1.rsp
+D:\apps\winbuilds\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Lab04.dir/objects.a -Wl,--no-whole-archive -o Lab04.exe -Wl,--out-implib,libLab04.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Lab04.dir\linklibs.rsp
