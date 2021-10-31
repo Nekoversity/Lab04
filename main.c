@@ -16,6 +16,26 @@ int sym_counter()
     return 0;
 }
 
+int is_word()
+{
+    char word[20] = "osmanthus";
+    int all_is_letter = 1;
+
+    char* pw;
+
+    for (pw = word; *pw && all_is_letter; ++pw)
+    {
+        if (!(isalpha(*pw))) all_is_letter = 0;
+    }
+
+    if (all_is_letter)
+        printf("\nGiven string is word\n");
+    else
+        printf("\nGiven string isn`t word\n");
+
+    return 0;
+}
+
 int main() {
 
     return 0;

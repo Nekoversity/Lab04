@@ -13,4 +13,6 @@ D:/dev/cpp/uni/Lab04/stdafx.h
 D:/dev/cpp/uni/Lab04/stdafx.h
 stdio.h
 -
+ctype.h
+-
 
