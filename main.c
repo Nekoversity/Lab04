@@ -91,7 +91,33 @@ int bracket_check()
     return 0;
 }
 
-int main() {
+int less_of_all()
+{
+    char text[100] = "Text for checking the shortest word and count for itself";
+    char shortest[20];
+    int shortest_len = 0, shortest_count = 0;
+    char* token = strtok(text, " ");
 
+    do {
+        if (strlen(token) < shortest_len || shortest_len == 0)
+        {
+            strcpy(shortest, token);
+            shortest_len = strlen(token);
+            shortest_count = 1;
+        }
+        else if (strcmp(token, shortest) == 0)
+        {
+            ++shortest_count;
+        }
+
+        token = strtok(NULL, " ");
+    } while (token);
+
+    printf("\nShortest: %s, length: %d, count: %d\n", shortest, shortest_len, shortest_count);
+    return 0;
+}
+
+int main() {
+    less_of_all();
     return 0;
 }
