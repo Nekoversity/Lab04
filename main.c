@@ -117,7 +117,26 @@ int less_of_all()
     return 0;
 }
 
+int reverse_string()
+{
+    char text[100] = "saitama";
+    char* copied_text;
+    int real_len = strlen(text);
+
+    strcpy(copied_text, text);
+
+    for (int i = 0; i < (real_len / 2); ++i)
+    {
+        char tmp = text[i];
+        text[i] = text[(real_len - 1) - i];
+        text[(real_len - 1) - i] = tmp;
+    }
+
+    printf("\nReverse for [%s] is [%s]\n",copied_text, text);
+
+    return 0;
+}
+
 int main() {
-    less_of_all();
     return 0;
 }
